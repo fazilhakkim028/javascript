@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>sss</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			
+		</div><!--wrapper-->
+		
+		<!-- <script>
+			var first = document.createElement("INPUT");
+			
+			var second= document.createElement("INPUT");
+			
+			document.getElementById('wrapper').appendChild(first);
+			document.getElementById('wrapper').appendChild(second);
+			document.getElementsByTagName("INPUT")[0].setAttribute("id","txt1");
+			document.getElementsByTagName("INPUT")[1].setAttribute("id","txt2");
+			document.getElementsByTagName("INPUT")[0].setAttribute("onkeyup","inputtext()");
+			
+			function inputtext()
+			{
+				document.getElementById('txt2').value=document.getElementById('txt1').value;
+			}
+			
+			
+		</script> -->
+		<script type="text/javascript" src="small_business_fazil/theme1/javacripts/jquery-1.12.3.min.js"></script>
+		
+		<script>
+		$(document).ready(function(){
+			
+		
+			
+			var first = document.createElement("INPUT");
+			
+			var second= document.createElement("INPUT");
+			
+			document.getElementById('wrapper').appendChild(first);
+			document.getElementById('wrapper').appendChild(second);
+			
+			document.getElementsByTagName("INPUT")[0].setAttribute("class","txt1");
+			document.getElementsByTagName("INPUT")[1].setAttribute("class","txt1");
+			//'document.getElementsByTagName("INPUT")[0].setAttribute("onkeyup","inputtext()");
+			
+			$(".txt1:eq(0)").keyup(function(){
+				$(".txt1:eq(1)").val($(this).val());
+			});
+			
+		});	
+		</script>
+	</body>
+</html>

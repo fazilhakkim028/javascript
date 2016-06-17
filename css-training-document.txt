@@ -1,0 +1,628 @@
+HTML
+	Advanced commenting from browser
+		This commenting is used for the advanced html or css tag to used in IE , we include js in this comment, and an if condition.
+		That is used for the particular script to run only on particular version of of that browser.
+		Eg: <!--[if IE 9]>
+			<script></script>
+			<![endif]-->
+		
+		Q. Why we are applying this comment.
+		A. some tag are not support by IE so we will add html & css support JS with in the html.
+		   The if condition is used for that script should run only for that mentioned browser version.
+		   To avoid the unwanted loading process.
+		
+	What is stylesheets?
+
+		The stylesheets are used for applying the design to the html, with respect to the html tag and elements.
+		
+	Why we need;
+		
+		The html only provides the structure of the content, stylesheets are used for the data presentation.
+		
+	syntax:
+
+		selector{<property>:<value>;}
+		
+			selector: It mentions for which content need to be selected for apply the style.
+			<property>: For that selected content what type of style need to be applied. Eg: font-size, color.
+			<value>: For that mentioned property what value we apply to be given.
+			
+	Where:
+	
+		Inline:
+			
+			The inline stylesheets  are applied inside the particular tag so that style will be applied to that particular tag. 
+			In this type code repeatation will occur. 
+			Eg: <p sytle="color:#fff; font-size:10px;">
+			
+		Internal:
+
+			The internal stylesheets are mentioned in the html file inside the <style> tag, this style can be any where like in 
+			<head>, <body>. 
+			The reason why we don't use this method is that this process will take some time to load the webpage.
+		
+		External: 
+
+			The external stylesheets are mentioned with in the <link> tag there we will mention the link to that source stylesheet file.
+			This link tag can be placed in <head> or <body> tag , but its recommended to mention <link> tag in <head> tag .
+			In html all are executed on line at a time , so if we mention <link> tag above the end of <body>tag  then complete html will load 
+			and browser will display only the content without design during the time of stylesheet loading.
+	
+	Selectors:
+	
+		Universal(*)
+			
+			The universal selector are used to apply common style to complete webpage for that mentioned properties.
+			Eg:*{margin:0; padding:0;}
+			Each element in html have their default margin and padding size to make it even we are using this universal selector 
+			and applying the property.
+			
+		Tag
+			The tag selector here we apply style to that particular tag for complete webpage. 
+			Eg:<a> {color:blue; text-decoration:none;}, p{font-size:10px;}
+			
+		Class
+
+			In class selector we can apply style to the group of contents where ever the class is mentioned.This is used reduce the code 
+			repeatation. We can reuse the class name n times in the same page. Eg: .classname {float:left; width:100%;padding:10px 2px;} 
+			
+		ID
+			In ID selector we can apply style to particular <div> where the id is mentioned. The ID is unique to that particular page.
+			If we used the ID in one <div>. we should not mentioned any where again. Eg: #id {float:left; width:100%;}
+			
+			Q: What will happen if we mention same ID twice in a page.
+			A: If we do like that css will apply for both the ID's , but when it comes to JS error will occur.
+		
+		Attribute
+			
+			The attribute selector are used to apply style to that particular attribute which is inside the element tag.
+			Eg: (type=text) ,input[type=text] { background-color: yellow;}
+		
+		Hack with-in selectors
+
+			This type of selector is used for IE WebBrowser, For the IE6 and below we should use '*' before the selector.
+			In the versions IE7 and above we should use '* and +' before the selector.
+		
+	Comments
+	
+		Single
+			
+			The single comments are used for comment the single line in html. Eg: //
+			This type is not a standardized , and not cross platform friendly.
+			
+		Multiline
+			
+			The multiline comments are used for commenting the block in the css.
+			The style with in '/*..*/' will not be applied.
+			Eg: /* a {text-decoration:none; color:green;} */
+			
+	Units
+
+		Pixel
+			
+			The pixel unit can be applied to the fixed pixels , to the screen resolution.
+			Eg: width:300px;, margin:10px;
+
+		Percentage (%)	
+			
+			The percentage unit is based on the Parent div. If we need to create responsive website 
+			then we need to use percentage unit.
+			Eg:	width:30%; , margin:1%;
+			
+		em
+			
+			The em we mostly use this for font-size and padding. By browser default 1em = 16px;
+			Eg: p{font-size:1em;}. so the font-size would be 16px for all <p> tag.
+			
+		Q. when we need to use px & em 
+		A. Px: fixed to the screen resolution
+		   em: Is relative  like % depends on font-family.
+			
+	Padding
+
+		The padding is applied when we need a space within the block.
+		This space will be from that block.
+		It can be applied to a particular part of the block : Eg: Padding-top:2%;, padding-right:5%;
+		we can apply using different types: 
+		1. padding: 2% 3%;(here first one mentions the top & bottom, second one mentions the left & right)
+		2. padding: 1% 2% 3% 2%; (Here it acts clockwise : top-right-bottom-left.)
+		3. padding:	1% 2% 4%; (Here it acts like: top-left & right-bottom)
+		
+	Margin
+
+		The margin is applied when we need a space outside the block.
+		This space will be considered from parent block.
+		It can be applied to a particular part of the block : Eg: margin-top:2%;, margin-right:5%;
+		we can apply using different types: 
+		1. margin: 2% 3%;(here first one mentions the top & bottom, second one mentions the left & right)
+		2. margin: 1% 2% 3% 2%; (Here it acts clockwise : top-right-bottom-left.)
+		3. margin:	1% 2% 4%; (Here it acts like: top-left & right-bottom)	
+		
+	Line-height
+
+		The line-height is spacing between the two lines, by default browser setting it depends on the font-size.
+		It also depends upon the font-family we are using.
+		Eg: p{line-height:70%;}
+		
+	Overflow
+	
+		The overflow property is applied when the content is more than the mentioned width & height.
+	
+		Auto
+			
+			The overflow property by default it is 'auto', which will apply scroll to the content.
+			
+			Eg: p{overflow:auto;}
+			
+		Hidden
+
+			The hidden property is applied to hide the content of the child block.
+			Eg: p{overflow:hidden;}
+			Q. When the overflow will happen.
+			A. If the parent width is less then child width then overflow will happen.
+			   It will cause horizontal scroll occur. It should be avoided.
+			   
+	List
+
+		ol
+			
+			The <ol> in ordered list is listed with  by default numbers, we can change to letters, roman, etc.,
+
+		ul
+			
+			The <ul> in unordered list is listed with by default bullet, we can change to square, circle, none.
+			For unordered list we can apply also.
+			
+		list-style-type
+			
+			This property will mention what style need to be applied to the list.
+			Eg: <ol>: '1','a','A','I','i'.
+				<ul>: 'bullet','circle', 'square', none.	
+	
+		list-style-position
+		
+			This property will mention where the list to be positioned.
+			Eg: list-style-position: outside;
+					list
+					L1
+					L2
+					l3
+				
+				list-style-position: inside;	
+				
+					list
+						
+						L1
+						L2
+						L3
+		
+		list-style-image
+		
+			This property will be used if we want to use image as a bullet.This type can be used only in <li>
+			Eg: list-style-image: url('');
+				
+	Border
+
+		The border is used to make box around the content.
+		
+		
+		width
+			
+			This property is used to set the width of the border.
+			Eg: border-width:2px;
+			
+		color
+
+			The color property is used to apply color over the border.
+			Eg: border-color: green;
+		
+		radius
+
+			The radius property is used apply round in corner of the border.
+			we can apply this for two corners or we can apply for four corners.
+			Eg: border-radius:2%; , border-radius: 2% 3%;
+				border-top-left-radius:2%;, border-top-rigth-radius:2%;
+				border-bottom-left-radius:2%;, border-bottom-rigth-radius:2%;
+			
+		style
+		
+			The border can be applied in different styles
+			Eg: solid, dotted, dashed, etc.
+			
+			
+	    FONT:
+	Font is how the conent is display the web page by using various css properties.
+	The properties are  font-family,font-style,font-weight,font-size and font-variant. 
+
+FONT-FAMILY:
+	The font-family are defalut system font, free font and paid font is there. The default system fonts is arial,times new roman and sans-serif , the free fonts is provided by google fonts, the google fonts is using you can mention the font using link or download the free font and use it. The paid font is also some as free font but you can paid the font and use.
+	The defaultly the systems fonts is display the web browser, you can change the font-family you can add the font-family to the css and its use it.
+
+FONT-STYLE:
+	The font-style is defaultly normal is display the web page, you can change the font-style italic and oblique.this font-style is lightly slide the font depends on what you give the value of font-style it will be change.
+
+FONT-WEIGHT:
+	The font-weight is default is normal.the font-weight properies are bold,light and 100 to 900 value is given.
+
+FONT-SIZE:
+	Font-size properties is used to web page is what the size of the content is display and clear view.the default p tag font-size is 10px, the h1 font size is default 36px, you can change the font-size to given the font-size tvalue.
+
+FONT-VARIANT:
+	The fon-variant properties is convert the normal text to small caps.the fon-variant default value is normal.
+
+COLOR UNITS:
+	The web page content is displaying different color by using the color properties.the normal p tag content  is displaying black color and the a tag color is blue, the content color is changed to given color value.
+	The color value the different form to given,there are hexa decimal value, rgb,rgba and color names.the default some color values is there in browser.
+	The color value is given rgba value is color:rgba(255,0,0,0.5);, the last value is opacity of the color.
+	The color value is given the hexa decimal in two ways,
+
+EX:#000 and #000000
+
+what is the difference between hexa decimal color #000 and #000000?
+	the two values hexa decimal is same,the #000 is the first value of 0 is converted to two zeros(00) and second and thrid also same.
+
+Which color is best to use the web page?
+	The hexa decimal value is best to used the web page.the hexa decimal value is easy to get and used.
+
+  EX:#000000 (black color) 
+
+
+
+The rgb value rgb(0,100%,0) is not working why?
+	The rgb value is given the all suit be percentage,the 0 is not given percentage its not take,so all values is given the percentage.
+
+Ex:color:(0%,100%,0%);
+
+TRANSPARENT:
+	The transparent  is like a opacity.the opacity value is changed to 0 to 1.the value of 0 is fully transparent and the value of 1 is fully opaque.
+
+TEXT:
+
+TEXT-ALIGN:
+	The text-align properties is to make  web page content is where will place,the text-align properties is left,center and right.the default the content is palce left side of the web page.
+
+I have one class inside the class one <span> text</span> tag is there,and i havesome  css properties are there width:50%,text-align:center,float:left; the span tag text is center or not?
+
+EX: <div class=”class-name”>
+	<span>text</span>
+       </div>
+the span text is display center of the inside the class.your css properties is apply to the span tag is not working,
+
+TEXT-DECORATION:
+	The text-decoration property is any html content in your web page is to make the line of the  above,below and center to  display the given  underline,overline and line-through.
+	The a tag is defaultly display the the content below underline value is there.you can remove the underline to change the value of none.
+
+TEXT-TRANSFORM:
+	The text-transform property is transfrom the text to uppercase,lowercase and captalize,the defalut value of text-transform is none.
+
+TEXT-INENT:
+	The text-indent properties is content of first line is where will start from left.the default  value of text-indent is left,you can change the text-indent value to give px,% and cm.
+
+WORD-SPACING:
+	The work spacing is spacify the space between the content of the your web page.the default vaue of the word-spacing is zero.
+
+LETTER-SPACING:
+	The letter spacing is spacify the space between the letter of the content.e default vaue of the letter-spacing is zero.
+
+LINE-HEIGHT:
+	The line-height prperties is spacify space between top and bottom of the text.e default vaue of the line-height is 1.428.
+BACKGROUND:
+
+BACKGROUND-IMAGE:
+	The any image is hover to change to the another image you can put background-image property.
+	The background-image property is given the value of url(“your image path”)  to display the
+background- image .
+
+BACKGROUND-COLOR:
+	The background-color is any content or image background some color is specified.the background-color what you need of the color you can use it.
+
+BACKGROUND-POSITION:
+	The background-position is where the background image is position to the your web page.the background image value is given left,right and center and percentage also give what you needed.
+
+BACKGROUND-REPEAT:
+	The background-repeat is the background-image is repeated to x and y axis.the default value of background-repeat.
+
+CURSOR:
+pre-defined:
+	The cursor is how the content or image view when the mouse hover,the default value of curser is text .you can change the cursor is pointer,resize and progress.
+Custom:
+	when the content and image hover the cursor value set the any image you want.
+
+HEIGHT:
+
+MIN-HEIGHT
+	The min-height property is set the minimum height 200px of the content,if the content is less the the min-height cannot be change.when the content is increase the min-height will be changed.
+
+MIN-WIDTH:
+	The min-width property is set the minimum width 200px of the content,if the content is less the the min-width cannot be change.when the content is increase the min-width will be changed.
+
+MAX-HEIGHT
+	The max-height property is set the maximum height 200px of the content,if the content is less the the min-height cannot be change.when the content is increase the max-height cannot changed.
+
+MAX-WIDTH:
+	The max-width property is set the maximum width 200px of the content,if the content is less the  min-width cannot be change.when the content is increase the max-width cannot changed.
+		
+		
+	1.Q: when we need to use !important
+	  A. used to override the css in the nested list.
+	
+	2.Q: body{font-size:62.5%} will this apply to both em & px.
+	  A. Yes it will apply to both , we can over write according to our requirement.
+	
+	3.Q:What will happen if i use 3<div> 
+        1. relative
+		2. absolute
+		3. relative (this div is inside 2nd div)
+		
+	  A. That block will be displayed inside the 2div and position depends on values given for that particular div.
+		 1. relative: based on the widow, where that particular block is.
+		 2. absolute: This position depends on parent div. If its given for parent div then it will be positioned at the top of page.
+	  
+	4.Q. Should we need to use % for media query.
+	  A. For responsive sites all the width should be mentioned in % percentage. Other than fixed device width.	
+		 	
+	  
+		
+			
+RESET CSS:
+
+*{padding:0px;margin:0px;}
+
+* is a universal selector 
+The universal selector matches any element type. It can be implied (and therefore omitted) if it isn’t the only component of the simple selector.
+Every browser will have different spaces for the different tags.This css is used, inorder to overwrite the spaces in the all browsers. 
+
+img{border:none;}
+
+The image shows a border in default in certain browsers.hence to solve this problem we are using this css property.
+
+a{text-decoration:none;}
+
+In default <a> tag has the underline as it is a link.
+To remove this link,we are using this css property.
+
+body font-size 62.5%
+
+We are giving font-size 65%  in <body> tag to reduce the fontsize in pixel(px) from emmet(em).
+By using this we can reduce em value in pixel which is reduced to 1em=10px.
+
+
+SHORT HAND PROPERTIES:
+
+padding:10px 10px 0px 0px;
+
+These padding value is represented in clockwise direction top -> right -> bottom -> left
+This represents top has 10px,right has 10px ,bottom and left has 0px padding.
+
+padding:10px 0px;
+
+This represents top and bottom has 10px,right and left has 0px padding
+
+padding:10px;
+
+This represents all the four sides top,bottom,right and left has padding 10px.
+
+background: [background-image background-repeat background-attachment background-position];
+
+This is the short hand property of background in which all properties is given in a single line.
+background-image-it is the background image in which image.png is present under the folder images.
+background-repeat- It is the background repeat property.no-repeat property is used to prevent the images from repeated or occuring once.
+background-attachment- It is background attachment property in which it tells whether the image has to be scroll or fixed.
+background-position- It is background position property.It tells where to position the image.
+
+VENDOR SPECIFICATION:
+
+Vendor specification are a way for browser makers to add support for new css features. Before the css property we have to use this as prefix.
+
+-webkit:
+It is vendor specification for the chrome and safari browsers.
+
+-moz:
+It is vendor specification for the mozilla firefox browser.
+
+-ms:
+It is vendor specification for the Internet explorer browser.
+
+-o:
+It is vendor specification for the opera browser.
+
+
+FLOAT & CLEAR :
+Float:
+specifies whether a element should float ( left / right / none).
+if float property is not specified for an element, there will issues in specifying padding, margin properties.
+
+Clear:
+used to control the nature of the floated elements.
+providing clear property for a floated element, wont allow elements to float on either of the sides.
+
+Z-INDEX:		
+it behaves as stacked elements.
+the element with the highest value tend to be on top of those with the lower ones.
+works only for positioned elements ( relative / absolute / fixed ).
+
+OPACITY:
+to specify  the transparency of an element 
+value ranges from 0 – 1.
+
+DISPLAY:
+is used to display / hide / display the elements in either block or inline manner.
+inline elements can be converted into block elements by using display:block property.
+block elements can be converted into inline elements by using float property.
+display:inline-block property is used to display block elements in inline manner.
+an element with property, either display:inline-block or  float will behave the same way, with an exception of certain aspects such as in which direction the element should float (i.e, either right or left)
+The inline-block elements will also respond to the vertical-align property.
+
+BOX SHADOW:
+is used to provide shadow effect for elements.
+normally this property contains five attributes, namely box-shadow: ( horizontal length, vertical lenght, blur radius, spread radius, shadow-color )
+If the shadow has to appear on the inside of elements, inset attribute can be added.
+
+BOX MODEL:
+
+describes the pictorial representation of the set of boxes of different values / functions that wraps around each and every element in HTML.
+Margin - provides an area outside the element
+Border - a border that goes around the padding and content. (i.e; outside the element.)
+Padding - an area around the content. (i.e., within the element)
+Content - content of the box. The text and image content appears here.
+
+SPRITE-IMAGES:
+if a numerous images are present in a web page, it will generate numerous requests to server and will take a longer loading time.
+inorder to prevent this , those numerous images are put in a single image file.
+they can be applied by altering the background-position property.
+
+MEDIA - QUERIES:
+used to apply css for media devices based on conditions.
+using it in CSS allows us to target different media types, and screen sizes, from a single stylesheet.
+it is used mainly for responsive web designs.
+@media print : to specify how the web page should be shown/ displayed when printed into hardcopy format.
+@media screen : to specify how the web page should be displayed in computer screens, tablets, smart-phones etc.
+@media all : to specify how the web page should be displayed in all media type devices.
+
+POSITION :
+used to position elements in a web page.
+
+       Types : 
+
+1. Fixed : used to position elements in the window of the device.
+2. Relative : used to position elements relative to its original flow / position using top, right, bottom / left properties. Other content will not be adjusted to fit into any gap left by the element. 
+3. Absolute : used to position elements relative to its parent.  An absolute positioned element behaves like a fixed-positioned element (i.e., it positions itself with respect to the document as parent ), unless its parent is relatively positioned.
+4. Static : this is the deafult position value for an element, and the elements will appear in the normal flow as given in the document. In most cases, this is used to overwrite the value (i.e., fixed / relative / absolute) of positoined elements.
+
+
+for a positioned element, only either top / bottom and left / right attributes should be mentioned. 
+providing both top, bottom and left, right will result in the element being positioned with top and left attribute values.
+
+
+CSS PSEUDO CLASSES:
+
+:link
+The :link selector is used to style unvisited links.
+
+:hover for anchor and other elements
+The :hover selector is used to provide the elements with various css when you mouse over them.
+The :hover selector is used not only for links but also for other elements.
+The hover effects gives us the ability to animate changes to a CSS property value while hovering over it. 
+
+:active
+The :active selector is used to style the active links. ( on clicking the links)
+The :active selector can be used on all elements, not only links.
+
+:visited
+The :visited selector is used to style the active links. ( after clicking on the links)
+The :visited selector style links to pages you have already visited.
+
+:focus
+The :focus selector is used to input field when it gets focus:
+The :focus selector is allowed on elements that accept keyboard events or other user inputs.
+
+:first-child
+The :first-child selector is used to select the specified selector, only if it is the first child of its parent.
+
+:last-child
+The :last-child selector matches every element that is the last child of its parent.
+
+nth-child(n)
+The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.
+
+
+CSS PSEUDO ELEMENTS:
+
+::first-line
+The ::first-line selector is used to add a style to the first line of the specified selector.
+Those properties font properties,color properties, background properties,word-spacing ,letter-spacing,text-decoration,vertical-align,text-transform,line-height,clear can be used with ::first-line.
+The ::first-line selector can only be used with block-level elements.
+
+::first-letter
+The ::first-letter selector is used to add a style to the first letter of the specified selector.
+The ::first-letter selector can only be used with block-level elements.
+This ::first-letter can also used with margin,padding and border properties.
+
+:before
+To insert the content before the element ::before is used.
+Content is the  attribute where we give the contents to insert before the element.
+Can also be used to position elements.
+
+:after
+To insert the content after the element ::before is used.
+Content is the  attribute where we give the contents to insert after the element.
+Can also be used to position elements.
+
+MEDIA QUERY:
+Media query is the technique introduced in css3 which uses @media rule to include a block of CSS properties only if a certain condition is true.
+
+RESPONSIVE:
+ Responsive is a technique which is used to display the web page in all the devices.
+It provide an optimal viewing and interaction experience—easy reading and navigation with a minimum of resizing, panning, and scrolling across wide range of devices(from desktop computer monitors to mobile phones).
+In responsive sites most of the units are represented in %(percentage).
+
+WEB FONTS:
+Web fonts are the pre-defined fonts provided by the web.
+The fonts are downloaded by the user's browser while rendering the webpage, and then applied to your text.
+The main drawbacks of using web fonts is it will slow your site's load time.
+
+FONT-FACE:
+The @font-face rule allows custom fonts to be loaded on a webpage. 
+In the new @font-face rule you must first define a name for the font (e.g.fontname) using (font-family: fontname ;) and then point to the font file using src(src: url(sansation_light.woff);).
+
+
+LOCALLY HOSTED FONT FILE:
+These are the font file downloaded from the web and stored it in the local folder and use it from that local folder.
+
+GOOGLE FONTS:
+Google fonts are the fonts which are provided by google.
+we can use the google font by giving the link <link href= 'https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'> in the html
+
+CSS3 ANIMATIONS:
+
+@KEYFRAMES:
+Keyframes are the property which specifies the animation code.
+For specifying keyframes @keyframes animation-name {keyframes-selector {css-styles;}}
+Keyframe selector values  0-100% or from-to (from=0%)(to=100%).
+
+TRANFORM:
+The transform property applies a 2D or 3D transformation to an element. 
+This property allows you to rotate, scale, move, skew, etc., elements.
+Syntax is transform: none|transform-functions;
+
+TRANSLATE:
+It defines a 2D translation.
+It can be used by transform:translate(10px);
+This property is also for translation for x,y,z axis translateX(x),translateY(y),translateZ(z).
+
+
+TRANSLATE3D:
+It defines a 3D translation for an element along the x,y,z axis.
+
+
+ROTATE:
+It defines a 2D rotation, the angle is specified in the parameter.
+Rotate can be performed using transform:rotate(deg);
+
+SCALE:
+It defines a 2D scale transformation (i.e., dimension changes )
+This property is also for translation for x,y,z axis scaleX(x),scaleY(y),scaleZ(z).
+Scale can be used by transform:scale(1.5,1.5);
+
+TRANSITION:
+Transitions allows you to change property values smoothly from one value to another,over a given duration.
+Transition property will be based on browser compatibility. 
+
+TRANSITION-DELAY:	
+The transition-delay property specifies when the transition effect will start.
+The transition-delay value is defined in seconds or milliseconds .
+The transition delay can given using transition-delay: time;
+This time specifies the number of seconds or milliseconds to wait before the transition effect will start.
+
+TRANSITION-DURATION:
+The transition-duration property specifies how many seconds or milliseconds a transition effect takes to complete.
+The transition delay can given using  the property transition-duration: time;
+This will specify how many seconds or milliseconds a transition effect takes to complete.
+
+TRANSITION-PROPERTY:
+The transition-property property specifies the name of the CSS property the transition effect is for .
+The transition effect will start when the specified CSS property changes.
+The various properties are  none/all/property
+none:this specifies no property will get a transition effect
+all:It is a default value.all properties will get transition effect.
+property: It gives list of css property names which get transition effect

@@ -1,0 +1,191 @@
+WEB BROWSER:
+	The browser is application to display the webpage content html,css and javascript.
+ 	
+DOM Rendering Engine:
+   -first it will loads html and after it will loads css.
+   -while loading html the <head> tag the external css will loads first.
+   -The head section will completes.then starts body portion loading.
+   -after html loading fully completes . it will construct and display in web browser.
+   -when the loading time the class name it will load css, the corresponding class name is not there. it will report the validation.
+   
+ 
+The all browser will follow the w3 standard
+like ---> w3.org
+
+1.Why we are using css in top?
+ -Html is executing code in step by step while loading first css execute then html tag load.
+ -On loading page site wn't collapse that is only we use in css in head tag
+ ex:
+   we have three external css files,call in one file in head ,next one in staring of body last one in before closing which one is apply finally?
+     --Html once ready first head css will work than,loading time body start css will apply ,finally body close before css will apply
+  ex:  
+ I have the styles for the html page,the style is given inside head,top body and bottom body , so witch one is take?
+ the last of body it will take.the first style and second style is over write to the last style is take.
+ 
+2.I have given the empty div  what will be the output? 
+  If the class is decleared inside the div tag then that css property will apply , if no class or id is declared then it will not make any output. 
+
+3.Why we are using js in bottom?
+    If we use in css and js in tag it is take to time to complete executing so few seconds html wont appear that is only we reduse the loadin time call the js in before body close
+  
+4.Render engine is debugg wrong tags?
+   No,render engine only display the contents,w3c is only debugg the code.
+   
+5.w3shool is third party website using w3c
+  w3 standard website is http://www.w3.org/
+
+empty tag issue--->
+without content empty tags we used, the default style will apply for that tag.
+Ex:<p></p>
+
+Deference kind of browser:
+	We are using 5 browser:chrome,fire box,sabari,IE and Opera,
+	The default the browser will take some padding and margin it suit be over write using css properties.*{padding:0px ,margin:0px;}
+	The html tags all are not support in all browser,same as css.the web page suit be responsive also in all browser.
+    EX:box-sizing properties are not support the IE.
+
+Validation:
+	The validation validate our html page in W3C standard or not.
+Why validation?
+	Validation is used for SEO operation and w3c standered.the validation is check  html page is  
+to display the error.
+	Ex: the img tag is default alt atteribute is used so its not there in html page the validation is give the error.
+	To validate our html to the URL: https://validator.w3.org/  
+	
+XHTML and HTML:
+	XHTML is making is following some rules and more html tags.the rule is how to write the html.The xhtml is mention the doctype its version also.
+	HTML5 is simpilfy html tags and remove the some html tags also,the HTML5 doctype is just mention the doctype only.
+
+CSS:
+	The css is cascading style sheet.its is used for how the html page is display the web browser.
+    The css file add the html file in three ways.there are 
+	1.inline
+	2.internal
+	3.external	
+	The inline css is we are not used why?
+	The inline css is some styles is repeated to your html pages in some conditions so the code length is higher.
+	
+Basics Rules  to be followed?
+	The html and css is we are using some basics rules.
+Why?
+	our webpage is designed for w3c standared.so we are validate our html to the w3c validation 
+so some rules are followed.
+	EX:The img tag must be alt attribute is needed.
+	
+Comments:
+	comments is not display the browser.the html5 comments are single line comments and multi line comments.
+	The single line comments is comment the single line only
+    Ex:<!-- the is a single line comment-->
+	
+Tags:
+     The html5 semantic tags is there
+	 <header>,<section>,<article>,<footer> and etc. in this tags are not working in ie8.
+	 this type of tags are not necessary to create webpage.
+	 this tags are for user will easily understand the code.
+	 
+we are using the images in our website, the path specification 
+1.absolute
+2.relative
+
+absolute path
+before image we are using the '/' it will take the document root of the webserver.directly it will take the public inside the image folder
+ex:/images/
+   
+relative path
+without '/' using the image path, it will take relative to the current page where the '/' ends.
+
+these absolute and relative will be in all in all files.
+
+HTML ELEMENTS:
+	 html document is made by using the html elements.the html elements is start and end tag. the html elements inside the content is given.
+	The html (h1-h6) tags is define the heading in the html element.the html elements is more tags are there.
+	EX:<html>,<body>,<head>,<p>,<h1> and etc..
+
+HTML ATTRIBUTES:
+
+	The attributes are  some additional information about the html element.the attributes are id, class,title, href.
+	The attributes are given to the start html tag inside.the attribute also given the value to the css.
+
+IMAGES:
+	The html images is given the image in <img> tag. the  image tag is alt attribute is needed.the   
+image tag inside width and height also given.
+Why alt attributes is required?
+	The image tag inside src to given the image path to dispaly the image.incase the path is wrong the alt attribute is given the some text message.w3c validation is alt attributes is not there its given the error, so alt attribute is important the img tag.
+
+TABLE:
+	The table is containing rows and colums,the table tag is define <table> . Inside the table tag is   table row <tr> and table colum <td> is threre.
+
+	The table is also given the border attributes,cell spacing and cell padding and border collapse.
+	The cell spacing is cell between the space in the element.the cell padding is cell wall and cell content between the space.
+
+LISTS:
+	List is used to made the menus.three type of list is used.there are unordered list, ordered list and data types
+	the unordered list is define the unorder list content.the unorder list content start with bullet.the ordered list is give the order of list content start with numbers,alphabetes and roman letters.
+
+IFRAMES:
+	The iframe is used to another document in the current document, the ifreme tag also given the video or audio file also included.
+	
+LINKS:
+	All web page has link tag is there.
+	Links is used to <a> tag.inside the <a> tag is given the value to the href attribute,the href is given the path of the page.when user is click the link the link is open other tabs or same tabs.
+
+Advanced:
+Block level
+Block level elements : <div>, <h1>-<h6>, <p>, <form>,<header>,<footer>. These tags will consume width:100%.
+	The block element can made as inline using property float:left,display:inline.
+	
+Inline level
+Inline level elements: <span>, <a>, <img>. These tags will consume only the width required for that particular element.
+	 The inline elements can be made as block element using property display:block.	
+	 
+Html Stylesheets
+Inline
+The inline stylesheets are mentioned inside the tag to set particular design for that element. Eg:<p style=”color:#ffffff”>. If we use this code repeat will happen.
+External
+The external stylesheets are the path mentioned in html head tag to where the original css file is located. So the style is loaded through that link. It can be mentioned in body tag also but normally CSS should be loaded before the html , so when the webpage  is loaded display perfectly.
+Eg:<link src=”index.css” />
+
+Embed in tag
+In Embed tag the complete stylesheet in written inside the head tag or body within the style tag. In this method if the CSS file is large then the html page will take much time to load.
+Eg:<style></style>
+
+Html JavaScript
+Inline
+The inline JavaScript are mentioned inside the tag to set particular event for that element. To avoid code repeat this method is not used mostly. Eg:<p >
+
+External
+In external JavaScript the path mentioned before body end tag to where the original js file is located. So the once the Html and Css is loaded then the javascript will start to load because it will take some time to get loaded. Eg:<link src=”jquery.js” />
+
+Embed in tag
+In Embed tag the complete javascript is written inside the head tag or body within the script tag. In this method once the complete javascript is loaded then only the html will start load, but javascript don’t know where to apply the functions and it will take more time to load. 
+Eg:<script></script>
+
+Layout Explanation
+Fixed:
+      The website layout is fixed the certain resolution of the device specification we will give. the layout width will be permanent device specification.
+
+Liquid(fluid):
+    The liquid website layout most of the components are mentioned with the percentage width and adjust to the user’s device screen resolution.
+
+Entities:
+        There are some reserved characters not available in keyboard  and for the support in all the browser , we are using the character entities . And we can combine the letters with Diacritical mark.
+		ex:© copyright  &#169; & ampersand &#38;
+
+Events:
+		The html events are used when we need to trigger some process at certain point.  
+Eg: onmouseover, onsubmit,onload
+
+Sematic elements:
+The sematic elements that defines the content of that particular tag.  And these  <div> , <span>
+new semantic elements <header>,<article> and <footer>.
+
+Audio:
+The <audio> tag helps to play the audio file in the webpage,  using the control attribute we can control like play, pause and volume. The autoplay attribute makes the audio to start play once the page get loaded.
+in that audio we are mention the formats. ex:mp3,ogg
+
+Video:
+The <video> tag helps to play the video file in the webpage,  using the control attribute we can control like play, pause and volume.  We can mention the width and height to that element. If the width and height not mentioned the browser won’t know about the size of the video. The autoplay attribute makes the video to start play once the page get loaded.
+in that video we are mention the formats also. ex:MPEG, ogg
+
+ 
+   

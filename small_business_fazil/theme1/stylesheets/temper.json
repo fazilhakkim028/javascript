@@ -1,0 +1,11 @@
+		
+welcome = [{
+         
+            "content1": "fazil",
+		    "welcomeImg":"small_business_125/theme1/images/welcomeimg2.jpg",
+		    "class":"welcome-img",
+		    "welcontent1":"lorem ipsum,lorem ipsum,lorem ipsum,lorem ipsum,lorem ipsum,lorem ipsum,lorem ipsum,lorem ipsum,",
+		    "classRead":"read-more",
+		    "readcon":"read-more"
+}]
+

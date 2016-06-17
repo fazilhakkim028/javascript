@@ -1,0 +1,93 @@
+
+welcome = [{
+
+         "welcomeheading":"welcome",
+         "welcometext":"Lorem ipsum dolor sit amet, conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem  Lorem ipsum dolor sit amet, conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLoremipsum dolor sit amet, conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem ipsum dolor sit amet, conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem ipsum dolor sit amet, conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem ipsum dolor sit amet, conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem ipsum dolor sit amet, conseLorem ipsum dolor sit amet, conseLorem Lorem ipsum"
+},
+]
+
+process_data =[{
+
+             "processh3":"process",
+             "pcontent":"conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem ipsum dolor sit amet,ipsum dolor sit amet",
+             "processimg":"small_business_120/theme1/images/img3.jpg",
+             "learncont":"learn more"
+             
+}]
+
+
+event_data =[{
+			
+			"eventh3":"event",
+            "pcontent":"conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem ipsum dolor sit amet,ipsum dolor sit amet",
+            "eventimg":"small_business_120/theme1/images/img4.jpg",
+            "learncont":"learn more"
+
+}]
+
+team_data =[{
+			
+			"teamh3":"team",
+            "pcontent":"conseLorem ipsum dolor sit amet, conseLorem Lorem ipsumLorem ipsum dolor sit amet,ipsum dolor sit amet fazil",
+            "teamimg":"small_business_120/theme1/images/img4.jpg",
+            "learncont":"learn more"
+
+}]
+
+newsH3data= [
+{
+          "conth3":"latestnews"
+
+}
+]
+newsData=[
+{
+			"newsImg":"small_business_120/theme1/images/img1.jpg",
+			"newscontimg":"small_business_120/theme1/images/icon1.png",
+			"newscont":"Lorem ipsum dolor sit",
+			"text":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet",
+			"pName":"5th september 2015"
+			
+
+},
+{
+			"newsImg":"small_business_120/theme1/images/img2.jpg",
+			"newscontimg":"small_business_120/theme1/images/icon1.png",
+			"newscont":"Lorem ipsum dolor sit",
+			"text":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet",
+			"pName":"5th september 2015"
+			
+
+},
+{
+			"newsImg":"small_business_120/theme1/images/img1.jpg",
+			"newscontimg":"small_business_120/theme1/images/icon1.png",
+			"newscont":"Lorem ipsum dolor sit",
+			"text":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet",
+			"pName":"5th september 2015"
+			
+
+},
+{
+			"newsImg":"small_business_120/theme1/images/img1.jpg",
+			"newscontimg":"small_business_120/theme1/images/icon1.png",
+			"newscont":"Lorem ipsum dolor sit",
+			"text":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet",
+			"pName":"5th september 2015"
+			
+
+},
+{
+			"newsImg":"small_business_120/theme1/images/img1.jpg",
+			"newscontimg":"small_business_120/theme1/images/icon1.png",
+			"newscont":"Lorem ipsum dolor sit",
+			"text":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet",
+			"pName":"5th september 2015"
+			
+
+}
+
+]
+
+
+

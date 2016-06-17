@@ -1,0 +1,86 @@
+*{margin:0px;padding:0px;}
+a{text-decoration:none;}
+body {font-family: 'Source Sans Pro', serif;font-size: 62.5%;background-color: #ececec;}
+ul{list-style-type:none;}
+table, tr, td{ border-collapse: collapse;}
+p{font-size:16px;line-height: 28px;padding-bottom:0.5em;color:#4a4a4a;}
+h3{background-color:#4277AD;box-shadow: 0 0 2px 0 #000 inset;font-size:2em;color:#fff;padding:3px 0px 3px 10px;text-align:left;margin-bottom: 20px;}
+.wrapper{overflow: hidden;float:left;width: 100%;}
+.row{width:960px;margin:0px auto;}
+.header-content td{padding:0 3em;}
+.header{float: left;width:100%;}
+.header-content{float: left;width:100%;background-color:#fff;padding:0 3em;}
+.contact-details{float:right;width:100%;}
+.contact-details ul li{display: inline;padding-right: 10px;}
+.contact-details ul li a{color:#3a3a3a;word-wrap: break-word;font-size:16px;}
+.contact-details ul{float:right;}
+.logo{float:left;width:100%;text-align:left;}
+.header-social-link{float:left;width:100%;}
+.header-social-link img{max-width:100%;}
+.header-social-link ul{text-align: right;}
+.header-social-link li{display: inline-block;}
+.contact-details span{font-size: 15px;padding-left: 10px;}
+.menucontainer{float:left;width: 100%;background-color:#4277AD;box-shadow: 0 0 2px 0 #000 inset;}
+.menucontainer ul{display:block;text-align:center;}
+.menucontainer ul li{display: inline-block;padding:0 1em;}
+.menucontainer ul li a{color:#fff;display: inline-block;font-size: 1.7em;font-weight: 600;outline: medium none;padding: 0.4em 0.2em;position:relative;}
+.menucontainer ul li.active a, .menucontainer ul li:hover a{color: #8cd5ff;}
+ul.blue ul{background-color:#4277AD;position:absolute;left:4px;position:absolute;top:40px;z-index:100000000;text-align:left;visibility:hidden;display:none;min-width:124px;padding-top:0em;}
+ul.blue ul li a{color:#464747!important;background:none!important;display:block; float: none; width:100%;font-size:14px;text-transform:capitalize!important;border:none!important;}
+ul.blue ul li a:hover{color:#000!important;background-image:none;border-radius:0!important;position:relative;}
+ul.blue ul li:hover {position: relative;background-image:none;} 
+ul.blue ul li:hover > ul{visibility:visible;display:block;    -moz-animation: fadeInLeft .3s ease-in ;    -webkit-animation: fadeInLeft .3s ease-in ;    animation:fadeInLeft .3s ease-in ;top:0px;left:100%;}
+ul.blue li:hover > ul{visibility:visible;display:block;    -moz-animation: fadeInDown .3s ease-in ;    -webkit-animation: fadeInDown .3s ease-in ;    animation:fadeInDown .3s ease-in ;}
+ul.blue ul li{background:none!important;display:block;float:none;list-style-type: none;border:none!important;padding:0em 0em 0.2em 1em;margin-right:0;}
+.banner{float: left;width:100%;margin-bottom: 20px;}
+.container-content{float:left;width:100%;padding: 0 3em 2.5em;background-color:#fff;}
+.container-left{width:64%;float:left; margin-right: 20px;}
+.static-block{float:left;width:100%;margin-bottom: 20px;}
+.static-common-block{float:left;width:95%;}
+.read-more{width:100%;float:left;text-align: right;}
+.read-more a{padding: 6px 15px;color: #3b4044; font-size: 14px;background-color:#ccc;border: 1px solid #aeaeae;}
+.container-right{float:left;width:33.9%;}
+.contact-block{float: left;width: 100%;background-color:#4e5459;padding:0px 10px 10px;margin-bottom: 25px;}
+.contact-block ul li.phone{background:transparent url("../images/phone.png") no-repeat scroll left 2px;}
+.contact-block ul li.mobile{background:transparent url("../images/mob.png") no-repeat scroll left 2px;}
+.contact-block ul li.mail{background:transparent url("../images/mail.png") no-repeat scroll left 2px;}
+.contact-block ul li.loc{background:transparent url("../images/location.png") no-repeat scroll left 2px;}
+.contact-block ul li {font-size: 16px;padding-left: 22px;padding-bottom: 10px;color: #fff;}
+.contact-block h3{box-shadow: none;color: #fff;font-size: 2em;padding: 5px 0 5px 10px;text-align: left;background:none;margin-bottom: 15px;}
+.contact-block .read-more a{background-color: transparent;border: medium none;color: #fff;text-decoration: underline;}
+.contact-block .read-more{box-sizing: border-box;padding-right: 10px;padding-bottom: 20px;}
+.event-block{float:left;width:100%;}
+.event-block img{border:1px solid #000;max-width:100%;float:left;margin-right: 15px;}
+.event-block-content{float:left;width:100%;margin-bottom:1em;}
+.career-block{float:left;width:100%;margin-bottom: 30px;}
+.testimonial-block{float:left;width:100%;background-color:#4e5459;}
+.testimonial-block h3{box-shadow: none;color: #fff;font-size: 2em;padding: 5px 0 5px 10px;text-align: left;background:none;margin-bottom: 15px;}
+.test-img{float:left;}
+.test-common-content{float:left;}
+.test-img img{max-width: 100%;padding-left: 10px;}
+.testimonial-block p{color:#fff;padding-bottom: 0;padding-left: 10px;}
+.testimonial-block .read-more{padding-bottom: 10px;}
+.testimonial-block .read-more a{color: #fff;border: medium none;background-color:transparent;text-decoration: underline;}
+.gallery{float:left;width: 100%;margin-top: 25px;}
+.gallery ul li{display:inline-block;margin-right: 14px;}
+.gallery img{border: 1px solid #274d8d;max-width:100%;}
+.footer{float:left;width: 100%;background-color:#4e5459;}
+.footer-menu{width:83%;float:left; }
+.footer-top{float: left;width:100%;margin-bottom: 20px;margin-top: 10px;}
+.footer-bottom{float: left;width:100%;}
+.footer-social-link{width:14%;float:right;}
+.footer-social-link a{padding-right: 30px;}
+.footer-menu ul li.active a, .footer-menu ul li:hover a{color: #8cd5ff;}
+.footer-menu ul li a{font-size: 1.7em;color:#fff;}
+.footer-menu ul li{display:inline-block;margin-right:15px;}
+/*.footer td{padding: 5px 10px 0;}*/
+.copyright_block a {color:#FFFFFF;font-size: 1.6em;padding-right:0.7em;}
+.copyright_block ul li:last-child {background: none repeat scroll 0 0 transparent;padding-left:0.7em;}
+.webnish_footer {float:right;width:auto;}
+.webnish_footer p {color:#FFFFFF;float:left;font-size:1.6em;padding-right:1em;padding-top:0.1em;padding-bottom:0em;}
+.webnish_footer img {float:right;}
+.copyright_block ul li {background: url("../images/pipeline.png") no-repeat scroll right center transparent;display: inline;list-style-type: none;}
+
+
+
+

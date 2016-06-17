@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+                <base href="http://192.168.215.4/small_business_99-script2.html.erb" >
+		<title>script-validation</title>
+		
+		<link href="small_business_109/theme1/stylesheets/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="small_business_fazil/theme1/stylesheets/table.css" media="all" rel="stylesheet" type="text/css" />
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<div class="row">
+					
+				
+		</div><!--row-->
+		</div><!--container-->
+		</div><!--wrapper-->
+		
+		<script type="text/javascript" src="small_business_45/theme1/javascripts/jquery-1.11.1.js"></script>
+		
+		//reversing the string
+
+		<script type="text/javascript">
+
+		var my_str="Welcome to www.plus2net.com"
+
+		var i=my_str.length,j;
+		var x=[];
+		var y=[];
+		l=i-1;
+		j=l;
+		
+		for(i=0;i<=l;i++)
+		{
+		y[i]=my_str[j];
+		console.log(y[i]);
+		}
+	/*	for (var x = i; x >=0; x--)
+		   {
+		  document.write(my_str.charAt(x));
+
+		   } 	*/
+
+		</script>
+		
+	</body>
+</html>
+

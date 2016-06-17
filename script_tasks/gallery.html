@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>script-validation</title>
+		
+		<link href="small_business_109/theme1/stylesheets/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="small_business_fazil/theme1/stylesheets/table.css" media="all" rel="stylesheet" type="text/css" />
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<div class="row">
+					
+					 	
+					  
+					    <!-- <label for="name">first value</label>
+					    <input type="number" class="form-control" name="fname" id="fvalue">-->
+					  
+					  
+					    <label for="name">second-value:</label>
+					    <input type="number" class="form-control" name="email" id="svalue">
+					  
+					  <input type="button" class="btn btn-default" value="result" onclick="displayvalue();" />
+					  <!-- <input type="button" class="btn btn-default" value="set cookie" onclick="dispcookie();" /> -->
+					   <!-- <input type="button" class="btn btn-default" value="get cookie" onclick="ReadCookie();" />
+					   <input type="button" class="btn btn-default" value="get value" onclick="getvalue();" />
+		  			<button type="button" class="btn btn-default" onclick="return validateform()">Submit</button> -->
+		  			
+		  		<div class="content">
+				 <div class="boxes">
+					<div class="box-item red" ><a href="#"><img class="img-responsive" src="small_business_fazil/theme1/images/img350.jpg" alt="img-360" title="img-360" /></a></div>
+				    <div class="box-item blue" translateVal=""><a href="#"><img class="img-responsive" src="small_business_fazil/theme1/images/img2.jpg" alt="img2" title="img2" /></a></div>
+				    <div class="box-item green" translateVal=""><a href="#"><img class="img-responsive" src="small_business_fazil/theme1/images/high.jpg" alt="high" title="high" /></a></div>
+				</div>
+		
+				<a href="#"  class="next" onclick="Slider.move('right')">next</a>
+				<a href="#"  class="prev" onclick="Slider.move('left')">prev</a>
+			 </div><!--content-->
+			
+		</div><!--row-->
+		</div><!--container-->
+		</div><!--wrapper-->
+		
+		<script type="text/javascript" src="small_business_45/theme1/javascripts/jquery-1.11.1.js"></script>
+		
+		
+		<script>
+				Slider = {
+				current : 0,
+				boxes : document.getElementsByClassName("box-item"),
+				boxWidth: 0,
+				init : function(boxWidth){
+					Slider.boxWidth = boxWidth;
+					Slider.boxes[0].style.transform = "translate(0px, 0)";
+					Slider.boxes[0].translateVal = 0;
+					for (var i=1; i<Slider.boxes.length; i++) {
+						Slider.boxes[i].style.transform = "translate("+(boxWidth)+"px, 0)";
+						Slider.boxes[i].translateVal = boxWidth;
+					}
+				},
+				move : function(direction){
+					if (direction == "left" && Slider.current > 0){
+						Slider.current--;
+					} else if (direction == "right" && Slider.current < Slider.boxes.length-1){
+						Slider.current++;
+					}
+					for (var i=0; i<Slider.boxes.length; i++) {
+						var translateVal = Slider.boxWidth;
+						if (i == Slider.current){
+							translateVal = 0;
+						} 
+						Slider.boxes[i].style.transform = "translate("+(translateVal)+"px, 0)";
+						Slider.boxes[i].translateVal = translateVal;
+					}   
+				}
+			}
+		  
+           window.onload = function(){Slider.init(350)};
+		</script>
+		
+		
+	</body>
+</html>
+

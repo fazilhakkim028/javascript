@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>script-validation</title>
+		<base href='http://192.168.215.4/small_business_99-script2.html.erb'>
+		<link href="small_business_109/theme1/stylesheets/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="small_business_fazil/theme1/stylesheets/table.css" media="all" rel="stylesheet" type="text/css" />
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<div class="row">
+					
+					 	
+					  
+					    <!-- <label for="name">first value</label>
+					    <input type="number" class="form-control" name="fname" id="fvalue">
+					  
+					  
+					    <label for="name">second-value:</label>
+					    <input type="number" class="form-control" name="email" id="svalue">
+					  
+					  <input type="button" class="btn btn-default" value="result" onclick="readvalue();" /> -->
+					  <!-- <input type="button" class="btn btn-default" value="set cookie" onclick="dispcookie();" /> -->
+					   <!-- <input type="button" class="btn btn-default" value="get cookie" onclick="ReadCookie();" />
+					   <input type="button" class="btn btn-default" value="get value" onclick="getvalue();" />
+		  			<button type="button" class="btn btn-default" onclick="return validateform()">Submit</button> -->
+		  			
+		  			
+		         <div class="fade-in">
+        				<ul>
+						  <li><img src=" https://placehold.it/166x184" /></li>
+						  <li><img src=" https://placehold.it/166x184" /></li>
+						  <li><img src=" https://placehold.it/166x184" /></li>
+						  <li><img src=" https://placehold.it/166x184" /></li>
+						  <li><img src=" https://placehold.it/166x184" /></li>
+						  <li><img src=" https://placehold.it/166x184" /></li>
+						  <li><img src=" https://placehold.it/166x184" /></li>
+						</ul> 
+    </div>
+			
+			<div class="transform">
+				<div class="transfrm">
+				<p></p>
+			</div>
+			</div>
+			
+		  <p id="fazil"></p>
+		  <p id="fazil2"></p>
+		  <p id="fazil3"></p>
+		  <p id="fazil4"></p>
+					
+		</div><!--row-->
+		</div><!--container-->
+		</div><!--wrapper-->
+		
+		
+		<script type="text/javascript">
+			function readvalue(){
+				
+				value1=document.getElementById('fvalue').value;
+				value2=document.getElementById('svalue').value;
+				value3 =result(value1,value2);
+				
+				function result(value1,value2){
+					
+					res=+value1 + +value2;
+					document.getElementById('fazil2').innerHTML=res;
+					
+				}
+				
+			}
+			
+		</script>
+		
+		
+		<script type="text/javascript">
+			
+			function dispcookie()
+			{
+				if((document.myform.fname.value == "") || (document.myform.email.value == ""))
+				{
+				  document.getElementById('fazil4').innerHTML="please enter a value";
+				  return;
+				}	
+				
+				cookievalue = document.myform.fname.value + ";";
+				
+				document.cookie ="name=" + cookievalue;
+				// document.cookie ="email=" + cookievalue2;
+				document.write("cookies value:" + "name=" + cookievalue);
+				
+				
+			}
+			  </script>
+			  
+			  <script>
+				  
+				  var i=0;
+				  var root = document.querySelector('.fadein');
+				  var els = root.querySelectorAll(':not(:first-child)');
+				  for (i=0; i < els.length; i++) {
+				    els[i].classList.add('is-hidden');
+				  }
+				  root.addEventListener('transitionend', function(){
+				    root.insertBefore(root.querySelector(':first-child.is-hidden'), null);
+				  });
+				  setInterval(function(){
+				    root.querySelector(':first-child').classList.add('is-hidden');
+				    root.querySelector(':nth-child(2)').classList.remove('is-hidden');
+				  }, 3000)
+						
+		</script>
+		
+		<script>
+			
+			function ReadCookie()
+            {
+               var allcookies = document.cookie;
+               // document.write ("All Cookies : " + allcookies );
+               document.getElementById('fazil4').innerHTML=allcookies;
+               
+               // Get all the cookies pairs in an array
+               cookiearray = allcookies.split(';');
+               
+               // Now take key value pair out of this array
+               for(var i=0; i<cookiearray.length; i++){
+                  name = cookiearray[i].split('=')[0];
+                  value = cookiearray[i].split('=')[1];
+                  document.write ("Key is : " + name + " and Value is : " + value);
+               }
+               
+               		// console.log(cookiearray);
+            }
+		</script>
+		
+							<script>
+					
+						});
+					});//doc ready
+					
+					</script>
+		
+		
+					
+	</body>
+</html>
+

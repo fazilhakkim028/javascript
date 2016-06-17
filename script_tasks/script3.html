@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+                <base href="http://192.168.215.4/small_business_99-script2.html.erb" >
+		<title>script-validation</title>
+		
+		<link href="small_business_109/theme1/stylesheets/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="small_business_fazil/theme1/stylesheets/table.css" media="all" rel="stylesheet" type="text/css" />
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<div class="row">
+					
+					 	
+					  
+					    
+			 
+			 <div class="div1">1
+			 	<div class="div2">2
+			 		<div class="div3">
+			 			3
+			 		</div><!--div3-->
+			 	</div><!--div2-->
+			 </div><!--div1-->
+				  
+			<p id="f1"></p>
+			<p id="f2"></p>
+			<p id="f3"></p>
+					
+		</div><!--row-->
+		</div><!--container-->
+		</div><!--wrapper-->
+		
+		<script type="text/javascript" src="small_business_45/theme1/javascripts/jquery-1.11.1.js"></script>
+		
+		
+
+		<script>
+		$(document).ready(function(){
+
+		$(".div1").click(function(event){
+		document.getElementById('f1').innerHTML="fazil1";
+		});		
+		
+		$(".div2").click(function(event){
+		event.stopPropagation();
+		document.getElementById('f2').innerHTML="fazil2";
+				
+		
+		});
+
+		$(".div3").click(function(event){
+		event.stopPropagation();
+		document.getElementById('f3').innerHTML="fazil3";
+		
+		});
+		});
+	
+		</script>
+
+
+				
+		
+	</body>
+</html>
+
