@@ -29,3 +29,14 @@
             console.log('Bert loves his ' + bird );
         }
     }() );
+
+    console.log("included 1");
+    console.log("included 2");
+    console.log("included 3");
+    console.log("included 4");
+    console.log("included 5");
+    console.log("included 6");
+    console.log("included 7");
+    console.log("included 8");
+    console.log("included 9");
+    console.log("included 10");
