@@ -1,0 +1,69 @@
+<%# if @site.config.comment_management.enable_comments == "true" %>
+<%# if @article.enable_comments == true %>
+<script>
+  var krereadOnly = <%= @lock_status  %>;
+  var kreblockedwords = <%= raw @block_words %>
+</script>
+<link rel="stylesheet" type="text/css" href="/stylesheets/kre_comments/jquery-comments.css"/>
+<link rel="stylesheet" type="text/css" href="/stylesheets/kre_comments/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="/stylesheets/kre_comments/comment.css" />
+
+<script type="text/javascript" src="/javascripts/kre_comments/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/javascripts/kre_comments/jquery-comments1.js"></script>
+<!-- <script type="text/javascript" src="/javascripts/kre_comments/moment.js"></script> -->
+<script type="text/javascript" src="/javascripts/kre_comments/jquery.timeago.js"></script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script type="text/javascript" src="/javascripts/kre_comments/comment.js"></script>
+
+<script>
+$('input#captcha').change(function(){ 
+  $.ajax({
+       type: "GET",
+       url: '/get_reload_captcha',
+  beforeSend: function (xhr) {
+         xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+       },
+  success: function (data) {
+             $(".test").html(data);
+        }
+     });
+});
+</script>
+		<%= render :partial=>"/article_pages/kreatio_comments_advertisements" %>
+	<div class="kre-comments-top">
+
+<div class="test">
+<%= show_simple_captcha %>
+</div>
+</div><!--kre-comments-top-->
+  <div id="kre-comments-container">
+  	<div class="kre_report_blk">
+    <div class="kre_report_top">
+        <h4>Report abusive post</h4><a href="javascript:void(0)" onclick="kreclose(this)" class="kre_close">X</a>
+  </div>
+    <form onsubmit="return false;">
+        <textarea placeholder="Your reason to report this post" id="kre_report_textarea" name="reason"></textarea>
+        <input type="text" placeholder="Your email id" id="kre_report_input" name="email_id">
+         <input type="hidden" id="kre_report_id" name="kreatio_comment_id" value="">
+        <div class="kre_report_submit">
+            <button type="button" id="kre_report_cancel" class="kre-danger" onclick="kreclose(this)"> Cancel</button>
+            <button type="submit" id="kre_report_submit" onclick="krereport(this)" class="kre-info"> Report</button>
+        </div>
+    </form>
+        </div><!--kre_report_blk-->
+	<div class="kre_advertisements_top">  </div>
+  <form name="jquery-comments" id="jquery-comments-form">
+  	<%= hidden_field_tag "article_id", @article.id,:id=>"kre_com" %>
+    <input type="hidden" name="subscriber_email" id="subscriber_email" value="">
+    <input type="hidden" name="anonymous_post" id="anonymous_post" value="false">
+    <input type="hidden" name="comment_start" id="comment_start" value="">
+  </form>
+  </div>
+  <div id="comments-container">
+
+<!--comments-container-->
+
+</div><!--comments-block-->
+
+<%# end %>
+<%# end %>
