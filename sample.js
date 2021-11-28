@@ -1,10 +1,10 @@
 //challenge 1
 
 (function firstFunction () {
-    const b = 5; const c = 6;
+    const b = 4; const c = 6;
   
     (function secondFunction () {
-      const b = 8;
+      const b = 9;
   
       (function thirdFunction () {
         const a = 7; const c = 9;  
