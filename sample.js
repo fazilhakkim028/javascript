@@ -9,7 +9,7 @@
       (function thirdFunction () {
         const a = 7; const c = 9;  
         (function fourthFunction () {
-          const a = 1; const c = 8;
+          const a = 2; const c = 7;
           console.log(`a: ${a}`);
         })()
       })()
